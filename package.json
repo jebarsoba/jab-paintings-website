@@ -1,0 +1,26 @@
+{
+  "name": "jab-paintings-website",
+  "version": "1.0.0",
+  "description": "Painter JAB personal website.",
+  "engines": {
+    "node": "6.10.1"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jebarsoba/jab-paintings-website.git"
+  },
+  "author": "https://jebarsoba.github.io/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jebarsoba/jab-paintings-website/issues"
+  },
+  "homepage": "https://github.com/jebarsoba/jab-paintings-website#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
