@@ -10,7 +10,7 @@ block content
           span(class='icon-bar')
           span(class='icon-bar')
         a(class='navbar-brand' href='#') Jorge Augusto Barsoba
-      div(class='collapse navbar-collapse' id='bs-example-navbar-collapse-1')
+      div(id='bs-example-navbar-collapse-1' class='collapse navbar-collapse')
         ul(class='nav navbar-nav')
           li
             a(href='#') Obra
@@ -18,3 +18,16 @@ block content
             a(href='#') Biografía
           li
             a(href='#') Contacto
+      div(class='container')
+        div(id='myCarousel' class='carousel slide' data-ride='carousel')
+          ol(class='carousel-indicators')
+            li(data-target='#myCarousel' data-slide-to='0' class='active')
+            li(data-target='#myCarousel' data-slide-to='1')
+            li(data-target='#myCarousel' data-slide-to='2')
+          div(class='carousel-inner')
+            div(class='item active')
+              img(src='images/paintings/1-naturaleza-muerta-2.jpg')
+            div(class='item')
+              img(src='images/paintings/2-astillero-2.jpg')
+            div(class='item')
+              img(src='images/paintings/3-amanecer.jpg')
