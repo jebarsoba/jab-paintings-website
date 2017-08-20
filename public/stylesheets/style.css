@@ -1,0 +1,9 @@
+/* Full screen carousel item */
+.item {
+  height: 100vh;
+  background: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
