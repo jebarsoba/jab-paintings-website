@@ -20,13 +20,11 @@ block content
             a(href='#') Contacto
   div(id='myCarousel' class='carousel slide' data-ride='carousel')
     ol(class='carousel-indicators')
-      li(data-target='#myCarousel' data-slide-to='0' class='active')
-      li(data-target='#myCarousel' data-slide-to='1')
-      li(data-target='#myCarousel' data-slide-to='2')
+      - for(var i = 0; i < paintings.length; i++)
+        != '<li data-target=\'#myCarousel\' data-slide-to=\'' + i + '\'' + (i == 0 ? ' class=\'active\'' : '') + '></li>'
     div(class='carousel-inner')
-      div(class='item active' style={'background-image': "url('images/paintings/1-naturaleza-muerta-2.jpg')"})
-      div(class='item' style={'background-image': "url('images/paintings/2-astillero-2.jpg')"})
-      div(class='item' style={'background-image': "url('images/paintings/3-amanecer.jpg')"})
+      - for(var i = 0; i < paintings.length; i++)
+        != '<div class=\'item' + (i == 0 ? ' active\'' : '\'') + ' style=\"background-image: url(' + 'images/paintings/' + paintings[i] + ')\"></div>'
     a(class='left carousel-control' href='#myCarousel' data-slide='prev')
       span(class='glyphicon glyphicon-chevron-left')
       span(class='sr-only') Previous
