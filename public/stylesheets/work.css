@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  padding-top: 20px;
+}
+
+div {
+  /* 80% size of the viewport */
+  height: 80vh;
+  background-color: red;
+
+  /*position: relative;
+  top: 5vh;*/
+}
