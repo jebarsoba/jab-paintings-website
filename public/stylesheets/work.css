@@ -6,8 +6,13 @@ body {
 div {
   /* 80% size of the viewport */
   height: 80vh;
-  background-color: red;
 
-  /*position: relative;
-  top: 5vh;*/
+  /* Background image */
+  background-image: url("../images/paintings/abstraccion.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-attachment: scroll;
 }
