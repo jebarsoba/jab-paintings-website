@@ -16,3 +16,17 @@ body {
   background-clip: border-box;
   background-attachment: scroll;
 }
+
+#paintings2 {
+  /* 80% size of the viewport */
+  height: 80vh;
+
+  /* Background image */
+  background-image: url("../images/paintings/astillero.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-attachment: scroll;
+}
