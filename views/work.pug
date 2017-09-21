@@ -3,7 +3,5 @@ extends layout
 block content
   div(id='myCarousel' class='carousel slide' data-ride='carousel')
     div(class='carousel-inner')
-      div(class='item active')
-        div(id='paintings')
-      div(class='item')
-        div(id='paintings2')
+      - for(var i = 0; i < paintings.length; i++)
+        != '<div class=\'paintings item' + (i == 0 ? ' active\'' : '\'') + ' style=\"background-image: url(' + '../images/paintings/' + paintings[i] + ')\"></div>'
