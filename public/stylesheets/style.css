@@ -16,3 +16,12 @@ body {
   background-clip: border-box;
   background-attachment: scroll;
 }
+
+.gallery-main {
+  height: 70vh;
+  margin-bottom: 5px;
+}
+
+.gallery-thumbnails {
+  height: 10vh;
+}
