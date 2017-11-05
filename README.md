@@ -2,10 +2,13 @@
 Painter JAB personal website, based on Node.JS.
 
 To run use (do "npm install" first):  
-DEBUG=jab-paintings-website:* node ./bin/www
+npm start (requires Heroku CLI)
 
-Or:  
+Or (requires Heroku CLI too):  
 DEBUG=jab-paintings-website:* heroku local web
+
+Or (without Heroku):
+DEBUG=jab-paintings-website:* node ./bin/www
 
 To kill Node processes use (on Windows):  
 taskkill /F /IM node.exe
