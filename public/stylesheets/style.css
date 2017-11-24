@@ -25,3 +25,9 @@ body {
 .gallery-thumbnails {
   height: 10vh;
 }
+
+.gallery-thumbnails:hover {
+  border-color: #ABB2B9;
+  border-style: solid;
+  border-width: 2px;
+}
