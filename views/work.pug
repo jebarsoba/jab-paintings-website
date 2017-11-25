@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  div(id='gallery-main' class='carousel slide' data-ride='carousel')
+  div(id='gallery-main' class='carousel slide' data-ride='carousel' data-interval='false')
     div(class='carousel-inner')
       - for(var i = 0; i < paintings.length; i++)
         != '<div class=\'paintings gallery-main item' + (i == 0 ? ' active\'' : '\'') + ' style=\"background-image: url(../images/paintings/' + paintings[i] + ')\"></div>'
@@ -11,7 +11,7 @@ block content
     a(class='right carousel-control' href='#gallery-main' data-slide='next')
       span(class='glyphicon glyphicon-chevron-right')
       span(class='sr-only') Next
-  div(id='gallery-thumbnails' class='carousel slide' data-ride='carousel')
+  div(id='gallery-thumbnails' class='carousel slide' data-ride='carousel' data-interval='false')
     div(class='carousel-inner')
       -
         var numberOfImagesPerCarouselItem = 4;
